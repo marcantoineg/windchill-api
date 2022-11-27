@@ -22,10 +22,15 @@ func OK(data interface{}) *Response {
 
 //return a 400 with the error appended as data.
 func BadRequest(err error) *Response {
+	var message string = ""
+	if err != nil {
+		message = err.Error()
+	}
+
 	return NewResponse(
 		http.StatusBadRequest,
 		"error",
-		err.Error(),
+		message,
 	)
 }
 

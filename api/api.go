@@ -1,7 +1,6 @@
 package api
 
 import (
-	"gin-api-template/configs"
 	"gin-api-template/routes"
 
 	"github.com/gin-gonic/gin"
@@ -10,11 +9,8 @@ import (
 func SetupRouter() *gin.Engine {
 	r := gin.Default()
 
-	configs.ConnectDB()
-
-	routes.RegisterUserRoutes(r)
-
 	routes.RegisterPingPong(r)
+	routes.RegisterWindchillRoutes(r)
 
 	return r
 }
