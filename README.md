@@ -2,6 +2,7 @@
 
 # 🌡 windchill-api
 ![ci badge](https://github.com/marcantoineg/gin-api-template/actions/workflows/ci.yml/badge.svg)
+<img height="20px" src="https://img.shields.io/badge/Golang-FFFFFF?logo=go&style=flat">
 
 A simple HTTP api in golang to serve [windchill](https://github.com/marcantoineg/wind-chill).
 
